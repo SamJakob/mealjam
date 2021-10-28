@@ -1,11 +1,16 @@
 {
   "name": "meal-jam",
   "private": true,
-  "devDependencies": {
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "next",
+    "@fortawesome/free-solid-svg-icons": "next",
+    "@fortawesome/vue-fontawesome": "latest",
     "@inertiajs/inertia": "^0.10.1",
     "@inertiajs/inertia-vue": "^0.7.2",
     "@inertiajs/progress": "^0.2.6",
+    "@js-from-routes/client": "^1.0.2",
     "@js-from-routes/core": "^1.0.1",
+    "@js-from-routes/inertia": "^1.10.0",
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
@@ -31,12 +36,5 @@
   "version": "0.1.0",
   "engines": {
     "node": "16.9.1"
-  },
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "next",
-    "@fortawesome/free-solid-svg-icons": "next",
-    "@fortawesome/vue-fontawesome": "latest",
-    "@js-from-routes/client": "^1.0.2",
-    "@js-from-routes/inertia": "^1.10.0"
   }
 }
