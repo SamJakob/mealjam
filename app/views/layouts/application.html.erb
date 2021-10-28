@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="h-full">
   <head>
-    <title>MealJam</title>
+    <meta charset="utf-8">
+
     <meta name="viewport" content="width=device-width,initial-scale=1">
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <%= vite_client_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= vite_javascript_tag 'application', defer: true %>
   </head>
 
-  <body>
+  <body class="h-full">
     <%= yield %>
   </body>
 </html>
