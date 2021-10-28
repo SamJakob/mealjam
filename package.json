@@ -1,7 +1,7 @@
 {
   "name": "meal-jam",
   "private": true,
-  "dependencies": {
+  "devDependencies": {
     "@inertiajs/inertia": "^0.10.1",
     "@inertiajs/inertia-vue": "^0.7.2",
     "@inertiajs/progress": "^0.2.6",
