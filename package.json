@@ -5,9 +5,11 @@
     "@inertiajs/inertia": "^0.10.1",
     "@inertiajs/inertia-vue": "^0.7.2",
     "@inertiajs/progress": "^0.2.6",
+    "@js-from-routes/core": "^1.0.1",
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
+    "@vue/compiler-sfc": "^3.2.20",
     "autoprefixer": "^10.3.7",
     "css-loader": "^6.5.0",
     "postcss": "^8",
@@ -29,5 +31,12 @@
   "version": "0.1.0",
   "engines": {
     "node": "16.9.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "next",
+    "@fortawesome/free-solid-svg-icons": "next",
+    "@fortawesome/vue-fontawesome": "latest",
+    "@js-from-routes/client": "^1.0.2",
+    "@js-from-routes/inertia": "^1.10.0"
   }
 }

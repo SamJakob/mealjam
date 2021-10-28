@@ -4,7 +4,7 @@
     <Flash />
 
     <inertia-head>
-      <title></title>
+      <title>My MealJam</title>
     </inertia-head>
 
     <main>

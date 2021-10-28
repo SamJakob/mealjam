@@ -94,8 +94,8 @@ GEM
       rails (>= 5)
     jbuilder (2.11.2)
       activesupport (>= 5.0.0)
-    js-routes (2.1.1)
-      railties (>= 4)
+    js_from_routes (2.0.5)
+      railties (>= 5.1, < 8)
     listen (3.7.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -220,7 +220,7 @@ DEPENDENCIES
   dotenv-rails
   inertia_rails
   jbuilder (~> 2.7)
-  js-routes
+  js_from_routes
   listen (~> 3.3)
   pg (~> 1.1)
   puma (~> 5.0)

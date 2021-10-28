@@ -31,12 +31,13 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 # Use 'Inertia.js' for Vue rendering.
 gem 'inertia_rails'
-# Use 'js-routes' to pass routing information to client-side.
-gem 'js-routes'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+
+  # Use 'js_from_routes' to pass routing information to client-side.
+  gem 'js_from_routes'
 end
 
 group :development do
