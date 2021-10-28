@@ -6,12 +6,14 @@
 
 Rails.application.config.content_security_policy do |policy|
   if Rails.env.development?
+    # Allow @vite/client to hot reload changes in development
     policy.connect_src *policy.connect_src, "ws://#{ ViteRuby.config.host_with_port }", :self
     policy.script_src *policy.script_src, "http://#{ ViteRuby.config.host_with_port }", :self, :unsafe_eval, :unsafe_inline
   else
     policy.default_src *policy.default_src, :self, :https
     policy.connect_src *policy.connect_src, :self, :https
     policy.script_src *policy.script_src, :self, :https
+    policy.style_src *policy.style_src, :self, :https, :unsafe_inline
   end
 
 #   policy.default_src :self, :https
@@ -19,7 +21,7 @@ Rails.application.config.content_security_policy do |policy|
 #   policy.img_src     :self, :https, :data
 #   policy.object_src  :none
 #   policy.script_src  :self, :https
-    # Allow @vite/client to hot reload changes in development
+
 
 
     # You may need to enable this in production as well depending on your setup.
