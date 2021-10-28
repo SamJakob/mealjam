@@ -6,7 +6,7 @@ import "../channels";
 import Vue from 'vue';
 import { createInertiaApp, Head, Link } from '@inertiajs/inertia-vue';
 import { InertiaProgress } from "@inertiajs/progress";
-import Routes from "~/Api";
+import Routes from "~/api";
 
 /* Styles */
 import 'virtual:windi.css';
@@ -19,7 +19,6 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { loadIcons } from "./icons";
 
 loadIcons(library);
-
 ActiveStorage.start();
 
 const pages = import.meta.glob('../Pages/**/*.vue');
