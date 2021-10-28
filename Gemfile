@@ -12,8 +12,6 @@ gem 'rails', '~> 6.1.4', '>= 6.1.4.1'
 gem 'pg', '~> 1.1'
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
-# Use SCSS for stylesheets
-gem 'sass-rails', '>= 6'
 # Vite: a lightning-fast webpacker alternative for transpiling JavaScript.
 gem 'vite_rails'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder

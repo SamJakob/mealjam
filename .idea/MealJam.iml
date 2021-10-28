@@ -90,15 +90,11 @@
     <orderEntry type="library" scope="PROVIDED" name="regexp_parser (v2.1.1, ruby-3.0.2-p107) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rexml (v3.2.5, ruby-3.0.2-p107) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubyzip (v2.3.2, ruby-3.0.2-p107) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="sass-rails (v6.0.0, ruby-3.0.2-p107) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="sassc (v2.4.0, ruby-3.0.2-p107) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="sassc-rails (v2.1.2, ruby-3.0.2-p107) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="selenium-webdriver (v4.0.3, ruby-3.0.2-p107) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="spring (v3.0.0, ruby-3.0.2-p107) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets (v4.0.2, ruby-3.0.2-p107) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets-rails (v3.2.2, ruby-3.0.2-p107) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thor (v1.1.0, ruby-3.0.2-p107) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="tilt (v2.0.10, ruby-3.0.2-p107) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tzinfo (v2.0.4, ruby-3.0.2-p107) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="vite_rails (v3.0.0, ruby-3.0.2-p107) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="vite_ruby (v3.0.1, ruby-3.0.2-p107) [gem]" level="application" />
@@ -128,7 +124,6 @@
         <option value="integration_test" />
         <option value="jbuilder" />
         <option value="job" />
-        <option value="js_routes:webpacker" />
         <option value="mailbox" />
         <option value="mailer" />
         <option value="migration" />
@@ -160,7 +155,6 @@
         <option value="integration_test" />
         <option value="jbuilder" />
         <option value="job" />
-        <option value="js_routes:webpacker" />
         <option value="mailbox" />
         <option value="mailer" />
         <option value="migration" />
@@ -365,14 +359,9 @@
               </RakeTaskImpl>
             </subtasks>
           </RakeTaskImpl>
-          <RakeTaskImpl id="js">
+          <RakeTaskImpl id="js_from_routes">
             <subtasks>
-              <RakeTaskImpl description="Make a js file with all rails route URL helpers" fullCommand="js:routes" id="routes" />
-              <RakeTaskImpl id="routes">
-                <subtasks>
-                  <RakeTaskImpl description="Make a js file with all rails route URL helpers and typescript definitions for them" fullCommand="js:routes:typescript" id="typescript" />
-                </subtasks>
-              </RakeTaskImpl>
+              <RakeTaskImpl description="Generates JavaScript files from Rails routes, one file per controller, and one function per route" fullCommand="js_from_routes:generate" id="generate" />
             </subtasks>
           </RakeTaskImpl>
           <RakeTaskImpl id="log">
