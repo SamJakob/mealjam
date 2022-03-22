@@ -1,4 +1,12 @@
 # MealJam
+
+This project was abandoned as it did not meet the required complexity
+for the task, however it does serve as a good starting point for using
+Inertia and Vue.js in a Rails application – so feel free to clone this
+and use it as a base for your next project!
+
+---
+
 Coursework project for COM2025 – Web Applications Development.
 
 - **Ruby version:** 3.0.2
